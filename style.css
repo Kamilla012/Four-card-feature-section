@@ -309,7 +309,7 @@ body
 
 .img-climate
 {
-    flex-basis: 32%;
+    flex-basis: 31%;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -389,12 +389,15 @@ body
 {
     
     flex-basis: 31%;
+    width: 300px;
+    height: 800px;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
     background-color: white;
     margin-left: 2%;
     margin-right: 2%;
+    position: relative;
 
 
      
@@ -411,20 +414,24 @@ body
 
 .text h1
 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 30px;
     color: orange;
+    position: relative;
 } 
 .text p
 {
     
-    padding-left: 50px;
-    padding-right: 50px;
+   
     font-size: 15px;
     text-align: center;
     color: rgb(58, 57, 57);
     padding-bottom: 50px;
+    position: absolute;
+    top: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -434,8 +441,58 @@ body
 {
     text-align: center;
     padding-bottom: 80px;
+    position: absolute;
+    left: 0;
+   right: 0;
+   margin: auto;
+   bottom: 0;
 }
 
+@media(max-width: 700px)
+{
+    .row
+    {
+        flex-direction: column;
+     
+        
+    }
+ 
+    .offer img
+{
+    width: 150px;
+    height: 150px;
+  
+}
+    .text h1
+{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+
+   
+}
+
+    .offers
+    {
+        height: 1600px;
+    }
+
+    .offer
+    {
+        height: 1000px;
+        width: 300px;
+        margin-left: 10%;
+    }
+    .button
+    {
+        top: 320px;
+    }
+
+    .text p
+    {
+        display: none;
+    }
+}
 .button button
 {
     
@@ -541,5 +598,34 @@ body
     padding: 10px;
 }
 
+@media(max-width: 700px)
+{
+    .orange-background
+    {
+        width: 100%;
+        height: 1200px;
+    }
+    .frame-about
+    {
+        left: 40px;
+    }
+    .title-programm
+    {
+        width: 400px;
+        height: 300px;
+        font-size: 30px;
+        top: 700px;
+        left: 40px;
+    }
+   
+    .img-travel img
+{
+    display: none;
+
+   
+
+    
+}
+}
 
 
